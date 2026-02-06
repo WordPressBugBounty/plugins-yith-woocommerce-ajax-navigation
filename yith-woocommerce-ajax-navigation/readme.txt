@@ -2,9 +2,9 @@
 
 Contributors: yithemes
 Tags: shop filter, Ajax product filter, product filter, woocommerce product filter, woocommerce filter
-Requires at least: 6.6
-Tested up to: 6.8
-Stable tag: 5.14.0
+Requires at least: 6.7
+Tested up to: 6.9
+Stable tag: 5.17.0
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -157,6 +157,28 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 14. Gutenberg block
 
 == Changelog ==
+
+= 5.17.0 - Released on 26 January 2025 =
+
+* New: support for WooCommerce 10.5
+* Update: YITH plugin framework
+
+= 5.16.0 - Released on 26 November 2025 =
+
+* New: support for WordPress 6.9
+* New: support for WooCommerce 10.4
+* Update: YITH plugin framework
+
+= 5.15.1 - Released on 6 November 2025 =
+
+* Update: YITH plugin framework
+* Fix: space key doesn't close dropdown when pressed inside the search box
+* Fix: removed handling for change event on dropdown search field
+
+= 5.15.0 - Released on 16 October 2025 =
+
+* New: support for WooCommerce 10.3
+* Update: YITH plugin framework
 
 = 5.14.0 - Released on 4 September 2025 =
 
