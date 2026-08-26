@@ -2,9 +2,9 @@
 
 Contributors: yithemes
 Tags: shop filter, Ajax product filter, product filter, woocommerce product filter, woocommerce filter
-Requires at least: 6.8
-Tested up to: 7.0
-Stable tag: 5.22.0
+Requires at least: 6.9
+Tested up to: 7.1
+Stable tag: 5.23.0
 Requires PHP: 8.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -157,6 +157,12 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 14. Gutenberg block
 
 == Changelog ==
+
+= 5.23.0 - Released on 26 August 2026 =
+
+* New: support for WordPress 7.1
+* New: support for WooCommerce 11.1
+* Update: YITH plugin framework
 
 = 5.22.0 - Released on 21 July 2026 =
 
