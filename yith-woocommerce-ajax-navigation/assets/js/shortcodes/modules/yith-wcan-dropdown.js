@@ -427,15 +427,26 @@ export default class YITH_WCAN_Dropdown {
 		let indexes = [];
 
 		// remove duplicates and sort array of results
-		return items.filter( ( { value, label } ) => {
+		return items.filter( ( { value, label, count } ) => {
 			if ( -1 === indexes.indexOf( value ) ) {
 				indexes.push( value );
 
 				// checks if select has a related option.
 				if ( ! this.getOptionByValue( value ).length ) {
-					this.$originalSelect.append(
-						`<option class="filter-item" value="${ value }">${ label }</option>`
-					);
+					const $option = $( '<option/>', {
+						class: 'filter-item',
+						value,
+						text: label,
+					} );
+
+					if ( typeof count !== 'undefined' ) {
+						$option.attr(
+							'data-count',
+							`<small class="item-count"> (${ count })</small>`
+						);
+					}
+
+					this.$originalSelect.append( $option );
 				}
 
 				// add item to final array of elements.

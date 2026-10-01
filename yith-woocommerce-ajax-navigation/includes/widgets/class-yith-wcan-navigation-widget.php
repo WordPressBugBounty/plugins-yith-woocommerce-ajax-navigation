@@ -711,7 +711,7 @@ if ( ! class_exists( 'YITH_WCAN_Navigation_Widget' ) ) {
 			}
 
 			// Current term.
-			if ( is_product_taxonomy() && ! yit_is_filtered_uri() && $term->term_id !== $queried_object->term_id ) {
+			if ( is_product_taxonomy() && ! yit_is_filtered_uri() && $queried_object instanceof WP_Term && $term->term_id !== $queried_object->term_id ) {
 				$link = add_query_arg(
 					array(
 						'source_id'               => $queried_object->term_id,
@@ -725,7 +725,7 @@ if ( ! class_exists( 'YITH_WCAN_Navigation_Widget' ) ) {
 			// Current term.
 			if ( isset( $request['source_id'] ) && isset( $request['source_tax'] ) ) {
 				$add_source_id = true;
-				if ( property_exists( $term, 'term_id' ) && property_exists( $queried_object, 'term_id' ) && $term->term_id === $queried_object->term_id ) {
+				if ( $term instanceof WP_Term && $queried_object instanceof WP_Term && $term->term_id === $queried_object->term_id ) {
 					if ( ! yit_is_filtered_uri() ) {
 						$add_source_id = false;
 					}
@@ -736,7 +736,7 @@ if ( ! class_exists( 'YITH_WCAN_Navigation_Widget' ) ) {
 						'source_id'  => sanitize_text_field( wp_unslash( $request['source_id'] ) ),
 						'source_tax' => sanitize_text_field( wp_unslash( $request['source_tax'] ) ),
 					);
-					if ( property_exists( $queried_object, 'taxonomy' ) && isset( $request[ $queried_object->taxonomy ] ) ) {
+					if ( $queried_object instanceof WP_Term && isset( $request[ $queried_object->taxonomy ] ) ) {
 						$args[ $queried_object->taxonomy ] = sanitize_text_field( wp_unslash( $request[ $queried_object->taxonomy ] ) );
 					}
 					$link = add_query_arg( $query_args, $link );

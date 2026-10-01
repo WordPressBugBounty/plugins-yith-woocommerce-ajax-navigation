@@ -37,7 +37,6 @@ if ( ! class_exists( 'YITH_WCAN_Ajax' ) ) {
 		 */
 		protected static $processing;
 
-
 		/**
 		 * Init defined AJAX handlers
 		 */
@@ -57,7 +56,15 @@ if ( ! class_exists( 'YITH_WCAN_Ajax' ) ) {
 		 */
 		public static function process() {
 			$current_action = current_action();
-			$handler        = str_replace( array( 'wc_ajax_yith_wcan_', 'wp_ajax_yith_wcan_', 'wp_ajax_nopriv_yith_wcan_' ), '', $current_action );
+			$handler        = str_replace(
+				array(
+					'wc_ajax_yith_wcan_',
+					'wp_ajax_yith_wcan_',
+					'wp_ajax_nopriv_yith_wcan_',
+				),
+				'',
+				$current_action
+			);
 
 			// checks for supported handler.
 			if ( ! in_array( $handler, self::$handlers, true ) ) {
@@ -79,11 +86,11 @@ if ( ! class_exists( 'YITH_WCAN_Ajax' ) ) {
 			call_user_func( self::class . '::' . $handler );
 		}
 
-
 		/**
 		 * Checks if a specific handler is being processed
 		 *
 		 * @param string $action Action to check, if any. If none submitted checks whether any defined handler is running.
+		 *
 		 * @return bool Whether specified handler is running.
 		 */
 		public static function is_processing( $action = false ) {
@@ -103,6 +110,8 @@ if ( ! class_exists( 'YITH_WCAN_Ajax' ) ) {
 				wp_die();
 			}
 
+			do_action( 'yith_wcan_before_render_filter', $preset_id, $filter_id );
+
 			$preset = yith_wcan_get_preset( $preset_id );
 
 			if ( ! $preset || ! $preset->is_enabled() ) {
@@ -116,11 +125,15 @@ if ( ! class_exists( 'YITH_WCAN_Ajax' ) ) {
 				wp_die();
 			}
 
+			$html = $filter->render();
+
+			do_action( 'yith_wcan_after_render_filter', $preset_id, $filter_id, $filter );
+
 			wp_send_json_success(
 				array(
 					'preset_id' => $preset_id,
 					'filter_id' => $filter_id,
-					'html'      => $filter->render(),
+					'html'      => $html,
 				)
 			);
 		}
@@ -211,6 +224,7 @@ if ( ! class_exists( 'YITH_WCAN_Ajax' ) ) {
 				$items[] = array(
 					'value' => $term->slug,
 					'label' => $term_options['label'] ? $term_options['label'] : $term->name,
+					'count' => $term->count,
 				);
 			}
 

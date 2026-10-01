@@ -845,13 +845,22 @@ var YITH_WCAN_Dropdown = /*#__PURE__*/function () {
       // remove duplicates and sort array of results
       return items.filter(function (_ref3) {
         var value = _ref3.value,
-          label = _ref3.label;
+          label = _ref3.label,
+          count = _ref3.count;
         if (-1 === indexes.indexOf(value)) {
           indexes.push(value);
 
           // checks if select has a related option.
           if (!_this5.getOptionByValue(value).length) {
-            _this5.$originalSelect.append("<option class=\"filter-item\" value=\"".concat(value, "\">").concat(label, "</option>"));
+            var $option = $('<option/>', {
+              "class": 'filter-item',
+              value: value,
+              text: label
+            });
+            if (typeof count !== 'undefined') {
+              $option.attr('data-count', "<small class=\"item-count\"> (".concat(count, ")</small>"));
+            }
+            _this5.$originalSelect.append($option);
           }
 
           // add item to final array of elements.
