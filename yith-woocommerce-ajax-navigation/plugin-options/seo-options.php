@@ -27,7 +27,6 @@ return apply_filters(
 					'desc' => '',
 					'id'   => 'yith_wcan_seo_settings',
 				),
-
 				'enable_seo'        => array(
 					'name'      => _x( 'Enable SEO option', '[ADMIN] Seo settings page', 'yith-woocommerce-ajax-navigation' ),
 					'desc'      => _x( 'Add "robots" meta tag in head tag of HTML page if filters have been activated.', '[ADMIN] Seo settings page', 'yith-woocommerce-ajax-navigation' ),
@@ -35,7 +34,6 @@ return apply_filters(
 					'type'      => 'yith-field',
 					'yith-type' => 'onoff',
 				),
-
 				'meta_tag'          => array(
 					'name'      => _x( 'Meta tag', '[ADMIN] Seo settings page', 'yith-woocommerce-ajax-navigation' ),
 					'desc'      => _x( 'Select which tag to use on filtered pages', '[ADMIN] Seo settings page', 'yith-woocommerce-ajax-navigation' ),
@@ -55,7 +53,6 @@ return apply_filters(
 						'values' => 'yes',
 					),
 				),
-
 				'nofollow'          => array(
 					'name'      => _x( 'Add "nofollow" to filter anchors', '[ADMIN] Seo settings page', 'yith-woocommerce-ajax-navigation' ),
 					'desc'      => _x( 'When enabled, adds rel="nofollow" attribute to all the filter anchors across the plugin', '[ADMIN] Seo settings page', 'yith-woocommerce-ajax-navigation' ),

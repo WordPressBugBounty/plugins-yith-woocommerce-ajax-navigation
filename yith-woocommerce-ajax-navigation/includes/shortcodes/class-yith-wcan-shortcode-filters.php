@@ -18,10 +18,12 @@ if ( ! class_exists( 'YITH_WCAN_Shortcode_Filters' ) ) {
 	 * Shortcodes classes
 	 */
 	class YITH_WCAN_Shortcode_Filters {
+
 		/**
 		 * Render shortcode, given attributes
 		 *
 		 * @param array $atts Shortcode attributes.
+		 *
 		 * @return string Shortcode output
 		 */
 		public static function render( $atts = array() ) {
@@ -30,6 +32,10 @@ if ( ! class_exists( 'YITH_WCAN_Shortcode_Filters' ) ) {
 				'selector' => '',
 			);
 			$atts     = shortcode_atts( $defaults, $atts );
+
+			if ( ! empty( $atts['selector'] ) && ! self::is_valid_selector( $atts['selector'] ) ) {
+				return '';
+			}
 
 			if ( ! $atts['slug'] ) {
 				return '';
@@ -95,6 +101,36 @@ if ( ! class_exists( 'YITH_WCAN_Shortcode_Filters' ) ) {
 		 */
 		public static function fix_for_gutenberg_block( $shortcode ) {
 			add_filter( 'yith_wcan_should_lazy_load_filters', '__return_false' );
+
+			if ( 0 === strpos( $shortcode, '[yith_wcan_filters' ) ) {
+				$_GET['min_price'] = 10;
+				$_GET['max_price'] = 100;
+
+				$_REQUEST[ YITH_WCAN_Query()->get_query_param() ] = 1;
+			}
+		}
+
+		/**
+		 * Check whether the shortcode selector is a valid CSS selector.
+		 *
+		 * @param string $selector Selector.
+		 *
+		 * @return bool
+		 */
+		protected static function is_valid_selector( $selector ) {
+			if ( ! is_string( $selector ) || '' === trim( $selector ) ) {
+				return false;
+			}
+
+			// Decode HTML entities before validation.
+			$selector = html_entity_decode( $selector, ENT_QUOTES | ENT_HTML5, get_bloginfo( 'charset' ) );
+
+			// Reject HTML-related characters.
+			if ( preg_match( '/[<>&]/', $selector ) ) {
+				return false;
+			}
+
+			return true;
 		}
 	}
 }

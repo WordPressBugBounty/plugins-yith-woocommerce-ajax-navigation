@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: YITH WooCommerce Ajax Product Filter\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/yith-woocommerce-"
 "ajax-product-filter\n"
-"POT-Creation-Date: 2025-06-09 09:45:51+00:00\n"
+"POT-Creation-Date: 2026-11-16 10:52:15+00:00\n"
 "PO-Revision-Date: 2021-02-12 13:32:05+0000\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -14,70 +14,70 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 
-#: includes/class-yith-wcan-admin.php:199
+#: includes/class-yith-wcan-admin.php:198
 msgid "The list of all filter sets created and configured for your shop."
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:222
+#: includes/class-yith-wcan-admin.php:221
 msgid ""
 "<b>100% mobile friendly:</b> Show filters in a modal view which is purposely "
 "designed for users visiting your site by smartphones or tablets"
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:223
+#: includes/class-yith-wcan-admin.php:222
 msgid ""
 "Show filters in the default layout or also in an <b>horizontal toolbar above "
 "products</b> (like Zalando)"
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:224
+#: includes/class-yith-wcan-admin.php:223
 msgid ""
 "Allow customers to <b>filter for price ranges</b> (unlimited ranges and the "
 "last range can show: “& above”) or using the <b>price slider</b>"
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:225
+#: includes/class-yith-wcan-admin.php:224
 msgid ""
 "Allow customers to <b>filter for review</b> and <b>for brand</b> (with the "
 "support to YITH WooCommerce Brands plugin)"
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:226
+#: includes/class-yith-wcan-admin.php:225
 msgid ""
 "Allow users to <b>order products</b> (by popularity, date, price, date of "
 "publishing, average rating, etc) and see only \tproducts in stock/featured/"
 "on sale"
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:227
+#: includes/class-yith-wcan-admin.php:226
 msgid ""
 "<b>Show the active filters</b> (with X to remove them) and choose their "
 "position (above products, above or under filters area)"
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:228
+#: includes/class-yith-wcan-admin.php:227
 msgid ""
 "Create <b>color swatches with image support</b> (to better identify "
 "gradients, textures, patterns, etc.) and with 2 colors"
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:229
+#: includes/class-yith-wcan-admin.php:228
 msgid "Show the options using <b>custom images or icons</b>"
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:230
+#: includes/class-yith-wcan-admin.php:229
 msgid ""
 "Choose the <b>order of the options</b> (alphabetical, terms order, terms "
 "count, etc.), enable tooltips and show each set of filters in toggle"
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:231
+#: includes/class-yith-wcan-admin.php:230
 msgid ""
 "Choose how to manage terms not availables: hide them OR shown them in grey "
 "color and not clickables "
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:232
+#: includes/class-yith-wcan-admin.php:231
 msgid "<b>Regular updates, Translations and Premium Support</b>"
 msgstr ""
 
@@ -99,12 +99,12 @@ msgstr "Kleur"
 msgid "Labels"
 msgstr "Labels"
 
-#: includes/tables/class-yith-wcan-filter-presets-table.php:195
+#: includes/tables/class-yith-wcan-filter-presets-table.php:198
 #, fuzzy
 msgid "Delete"
 msgstr "Filter verwijderen"
 
-#: includes/tables/class-yith-wcan-filter-presets-table.php:203
+#: includes/tables/class-yith-wcan-filter-presets-table.php:206
 msgid ""
 "This item will be removed from the list.\n"
 "Do you wish to continue?"
@@ -251,47 +251,47 @@ msgctxt "[Admin] Media library confirm button, when selecting images"
 msgid "Use this media"
 msgstr "Gebruik deze media"
 
-#: includes/class-yith-wcan-admin.php:195
+#: includes/class-yith-wcan-admin.php:194
 msgctxt "[Admin] tab name"
 msgid "Filter presets"
 msgstr "Filter pre-set"
 
-#: includes/class-yith-wcan-admin.php:202
+#: includes/class-yith-wcan-admin.php:201
 #, fuzzy
 msgctxt "[Admin] tab name"
 msgid "General options"
 msgstr "Algemene opties"
 
-#: includes/class-yith-wcan-admin.php:207
+#: includes/class-yith-wcan-admin.php:206
 #, fuzzy
 msgctxt "[Admin] tab name"
 msgid "SEO"
 msgstr "SEO"
 
-#: includes/class-yith-wcan-admin.php:216
+#: includes/class-yith-wcan-admin.php:215
 msgctxt "[Admin] tab name"
 msgid "Legacy"
 msgstr "Nalatenschap"
 
-#: includes/class-yith-wcan-admin.php:203
+#: includes/class-yith-wcan-admin.php:202
 msgctxt "[Admin] tab description"
 msgid "Configure the general settings of the plugin"
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:208
+#: includes/class-yith-wcan-admin.php:207
 msgctxt "[Admin] Tab description"
 msgid ""
 "Configure options to optimize SEO indexing on any page that includes filters."
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:240
+#: includes/class-yith-wcan-admin.php:239
 msgctxt "[HELP TAB] Video title"
 msgid ""
 "Check this video to learn how to <b>create a filter preset and show it on "
 "the shop page:</b>"
 msgstr ""
 
-#: includes/class-yith-wcan-admin.php:297
+#: includes/class-yith-wcan-admin.php:296
 msgctxt "[Admin] Plugin description"
 msgid ""
 "It allows your users to find the product they are looking for as quickly as "
@@ -300,37 +300,37 @@ msgstr ""
 "Het laat je gebruikers het product het product dat ze zoeken, zo snel "
 "mogelijk vinden."
 
-#: includes/class-yith-wcan-admin.php:420
+#: includes/class-yith-wcan-admin.php:419
 msgctxt "[Admin] Generic item name, in \"You have no x yet\""
 msgid "item"
 msgstr "Item"
 
-#: includes/class-yith-wcan-admin.php:421
+#: includes/class-yith-wcan-admin.php:420
 msgctxt "[Admin] Preset table empty message second line"
 msgid "But don't worry, here you can create your first one!"
 msgstr "Maar geen zorgen, je kunt hier je eerste aanmaken!"
 
-#: includes/class-yith-wcan-admin.php:568
+#: includes/class-yith-wcan-admin.php:567
 msgctxt "[ADMIN] WooCommerce Tools tab, name of the tool"
 msgid "Clear Product Filter transients"
 msgstr "Product Filter transients legen"
 
-#: includes/class-yith-wcan-admin.php:574
+#: includes/class-yith-wcan-admin.php:573
 msgctxt "[ADMIN] WooCommerce Tools tab, name of the tool"
 msgid "Run filter widgets upgrade"
 msgstr "Filter widgets upgrade uitvoeren"
 
-#: includes/class-yith-wcan-admin.php:569
+#: includes/class-yith-wcan-admin.php:568
 msgctxt "[ADMIN] WooCommerce Tools tab, button for the tool"
 msgid "Clear"
 msgstr "Wissen"
 
-#: includes/class-yith-wcan-admin.php:575
+#: includes/class-yith-wcan-admin.php:574
 msgctxt "[ADMIN] WooCommerce Tools tab, button for the tool"
 msgid "Run"
 msgstr "Uitvoeren"
 
-#: includes/class-yith-wcan-admin.php:570
+#: includes/class-yith-wcan-admin.php:569
 msgctxt "[ADMIN] WooCommerce Tools tab, description of the tool"
 msgid ""
 "This will clear all transients related to the YITH WooCommerce AJAX Product "
@@ -342,7 +342,7 @@ msgstr ""
 "configuratie van je product hebt gewijzigd en filters niet de verwachte "
 "resultaten weergeven."
 
-#: includes/class-yith-wcan-admin.php:576
+#: includes/class-yith-wcan-admin.php:575
 msgctxt "[ADMIN] WooCommerce Tools tab, description of the tool"
 msgid ""
 "This will create a preset for any sidebar of your shop containing filter "
@@ -442,12 +442,12 @@ msgctxt "[Admin] Filter edit form"
 msgid "Select which taxonomy to use for this filter"
 msgstr "Selecteer welke taxonomie je wilt gebruiken voor deze filter"
 
-#: plugin-options/filter-options.php:77
+#: plugin-options/filter-options.php:76
 msgctxt "[Admin] Filter edit form"
 msgid "Auto-populate with all terms"
 msgstr ""
 
-#: plugin-options/filter-options.php:79
+#: plugin-options/filter-options.php:78
 msgctxt "[Admin] Filter edit form"
 msgid ""
 "Populate this filter with all existing terms of the selected taxonomy.\n"
@@ -456,71 +456,71 @@ msgid ""
 "well.</span>"
 msgstr ""
 
-#: plugin-options/filter-options.php:88
+#: plugin-options/filter-options.php:86
 msgctxt "[Admin] Filter edit form"
 msgid "Choose terms"
 msgstr "Kies termen"
 
-#: plugin-options/filter-options.php:93
+#: plugin-options/filter-options.php:91
 msgctxt "[Admin] Filter edit form"
 msgid "Select which terms to use for filtering"
 msgstr "Selecteer welke termen je wilt gebruiken voor filteren"
 
-#: plugin-options/filter-options.php:97
+#: plugin-options/filter-options.php:94
 msgctxt "[Admin] Filter edit form"
 msgid "Filter type"
 msgstr "Filter type"
 
-#: plugin-options/filter-options.php:101
+#: plugin-options/filter-options.php:98
 msgctxt "[Admin] Filter edit form"
 msgid "Select the filter type for this filter"
 msgstr "Selecteer het filter type voor deze filter"
 
-#: plugin-options/filter-options.php:105
+#: plugin-options/filter-options.php:101
 #, fuzzy
 msgctxt "[Admin] Filter edit form"
 msgid "Labels"
 msgstr "Labels"
 
-#: plugin-options/filter-options.php:108
+#: plugin-options/filter-options.php:104
 #, fuzzy
 msgctxt "[Admin] Filter edit form"
 msgid "Show below"
 msgstr "Resultaten weergeven"
 
-#: plugin-options/filter-options.php:109
+#: plugin-options/filter-options.php:105
 #, fuzzy
 msgctxt "[Admin] Filter edit form"
 msgid "Show on the right"
 msgstr "Toon item telling"
 
-#: plugin-options/filter-options.php:110
+#: plugin-options/filter-options.php:106
 msgctxt "[Admin] Filter edit form"
 msgid "Hide"
 msgstr ""
 
-#: plugin-options/filter-options.php:112
+#: plugin-options/filter-options.php:108
 #, fuzzy
 msgctxt "[Admin] Filter edit form"
 msgid "Choose if and where to show the label inside your filter"
 msgstr "Kies de stijl van de filter binnen de widgets"
 
-#: plugin-options/filter-options.php:116
+#: plugin-options/filter-options.php:111
 msgctxt "[Admin] Filter edit form"
 msgid "Columns number"
 msgstr "Kolommen nummer"
 
-#: plugin-options/filter-options.php:121
+#: plugin-options/filter-options.php:116
 msgctxt "[Admin] Filter edit form"
 msgid "Set the number of items per row you want to show for this design"
 msgstr "Kies het aantal items per rij dat je wilt tonen voor dit ontwerp"
 
-#: plugin-options/filter-options.php:125
+#: plugin-options/filter-options.php:119
 msgctxt "[Admin] Filter edit form"
 msgid "Customize terms"
 msgstr "Aangepaste termen"
 
-#: plugin-options/filter-options.php:128
+#: plugin-options/filter-options.php:122
 msgctxt "[Admin] Filter edit form"
 msgid ""
 "Configure your terms individually; system will otherwise use default labels/"
@@ -534,55 +534,55 @@ msgid ""
 "this option and use the boxes below</span>"
 msgstr ""
 
-#: plugin-options/filter-options.php:138
+#: plugin-options/filter-options.php:131
 #, fuzzy
 msgctxt "[Admin] Filter edit form"
 msgid "Terms options"
 msgstr "Bestelling opties"
 
-#: plugin-options/filter-options.php:144
+#: plugin-options/filter-options.php:136
 msgctxt "[Admin] Filter edit form"
 msgid "Show hierarchy"
 msgstr "Toon hiërarchie "
 
-#: plugin-options/filter-options.php:147
+#: plugin-options/filter-options.php:139
 msgctxt "[Admin] Filter edit form"
 msgid "No, show all terms in same level"
 msgstr "Nee, toon alle termen in hetzelfde niveau"
 
-#: plugin-options/filter-options.php:148
+#: plugin-options/filter-options.php:140
 msgctxt "[Admin] Filter edit form"
 msgid "No, show only parent terms"
 msgstr "Nee, alleen hoofd-termen tonen"
 
-#: plugin-options/filter-options.php:149
+#: plugin-options/filter-options.php:141
 msgctxt "[Admin] Filter edit form"
 msgid "Yes"
 msgstr ""
 
-#: plugin-options/filter-options.php:151
+#: plugin-options/filter-options.php:143
 msgctxt "[Admin] Filter edit form"
 msgid "Choose how to show terms hierarchy"
 msgstr "Bepaal hoe je de termen hiërarchie wilt tonen"
 
-#: plugin-options/filter-options.php:155
+#: plugin-options/filter-options.php:146
 msgctxt "[Admin] Filter edit form"
 msgid "Allow multiple selection"
 msgstr "Meervoudige selectie toestaan"
 
-#: plugin-options/filter-options.php:157
+#: plugin-options/filter-options.php:148
 msgctxt "[Admin] Filter edit form"
 msgid "Enable if the user can select multiple terms when filtering products"
 msgstr ""
 "Inschakelen als de gebruiker meerdere termen can selecteren bij het filteren "
 "van producten"
 
-#: plugin-options/filter-options.php:161
+#: plugin-options/filter-options.php:151
 msgctxt "[Admin] Filter edit form"
 msgid "Multiselect relation"
 msgstr "Multi-selecteren relatie"
 
-#: plugin-options/filter-options.php:167
+#: plugin-options/filter-options.php:157
 msgctxt "[Admin] Filter edit form"
 msgid "Choose how multiple terms selection should behave"
 msgstr "Bepaal het gedrag van meervoudige termen selectie"
@@ -747,7 +747,7 @@ msgid "YITH AJAX Filters Reset Button"
 msgstr "YITH AJAX Filters Reset Knop"
 
 #: includes/elementor/class-yith-wcan-elementor-filters.php:90
-#: includes/shortcodes/class-yith-wcan-shortcode-filters.php:62
+#: includes/shortcodes/class-yith-wcan-shortcode-filters.php:68
 msgctxt "[ELEMENTOR] Default preset option"
 msgid "Choose an option"
 msgstr "Kies een optie"
@@ -822,7 +822,7 @@ msgctxt "[FRONTEND] Star rating label"
 msgid "Rated %s out of 5"
 msgstr "Waardering %s van de 5"
 
-#: includes/shortcodes/class-yith-wcan-shortcode-filters.php:71
+#: includes/shortcodes/class-yith-wcan-shortcode-filters.php:77
 msgctxt "[GUTENBERG]: block name"
 msgid "YITH AJAX Filters Preset"
 msgstr "YITH AJAX Filters Pre-set"
@@ -832,7 +832,7 @@ msgctxt "[GUTENBERG]: block name"
 msgid "YITH Reset Filters Button"
 msgstr "YITH Reset Filters knop"
 
-#: includes/shortcodes/class-yith-wcan-shortcode-filters.php:72
+#: includes/shortcodes/class-yith-wcan-shortcode-filters.php:78
 msgctxt "[GUTENBERG]: block description"
 msgid "Show filters from a preset"
 msgstr "Filters tonen van een pre-set"
@@ -850,42 +850,42 @@ msgstr ""
 "'Filters resetten' op je pagina te plaatsen, als de optie 'Knop positie "
 "resetten' niet werkt voor je producten loop"
 
-#: includes/shortcodes/class-yith-wcan-shortcode-filters.php:74
+#: includes/shortcodes/class-yith-wcan-shortcode-filters.php:80
 msgctxt "[GUTENBERG]: block empty message"
 msgid "Please, choose the preset to render"
 msgstr ""
 
-#: includes/shortcodes/class-yith-wcan-shortcode-filters.php:78
+#: includes/shortcodes/class-yith-wcan-shortcode-filters.php:84
 msgctxt "[GUTENBERG]: attribute description"
 msgid "Preset"
 msgstr "Pre-set"
 
-#: includes/tables/class-yith-wcan-filter-presets-table.php:141
+#: includes/tables/class-yith-wcan-filter-presets-table.php:144
 msgctxt "[Admin] Preset table column header"
 msgid "Preset name"
 msgstr "Naam pre-set"
 
-#: includes/tables/class-yith-wcan-filter-presets-table.php:142
+#: includes/tables/class-yith-wcan-filter-presets-table.php:145
 msgctxt "[Admin] Preset table column header"
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: includes/tables/class-yith-wcan-filter-presets-table.php:160
+#: includes/tables/class-yith-wcan-filter-presets-table.php:163
 msgctxt "[Admin] Preset edit action label"
 msgid "Edit this preset"
 msgstr "Deze pre-set bewerken"
 
-#: includes/tables/class-yith-wcan-filter-presets-table.php:178
+#: includes/tables/class-yith-wcan-filter-presets-table.php:181
 msgctxt "[Admin] Preset clone action label"
 msgid "Clone this preset"
 msgstr "Deze pre-set clonen"
 
-#: includes/tables/class-yith-wcan-filter-presets-table.php:202
+#: includes/tables/class-yith-wcan-filter-presets-table.php:205
 msgctxt "[Admin] Preset delete action label"
 msgid "Delete this preset"
 msgstr "Deze pre-set verwijderen"
 
-#: includes/tables/class-yith-wcan-filter-presets-table.php:259
+#: includes/tables/class-yith-wcan-filter-presets-table.php:263
 msgctxt ""
 "[Admin] Name of the item missing, shown in preset-empty-content template"
 msgid "filter preset"
@@ -897,7 +897,7 @@ msgctxt ""
 msgid "filter"
 msgstr "filter"
 
-#: includes/tables/class-yith-wcan-filter-presets-table.php:260
+#: includes/tables/class-yith-wcan-filter-presets-table.php:264
 msgctxt "[Admin] New preset button label"
 msgid "Create a new preset"
 msgstr "Nieuwe pre-set aanmaken"
@@ -941,7 +941,7 @@ msgstr ""
 "Alle filters terugzetten die zijn ingesteld door YITH WooCommerce AJAX "
 "Product Filter"
 
-#: plugin-options/filter-options.php:164
+#: plugin-options/filter-options.php:154
 #, fuzzy
 msgctxt ""
 "[Admin] Filter edit form; logical operator that affects query behaviour"
@@ -949,7 +949,7 @@ msgid "AND - Results need to match all selected terms at the same time"
 msgstr ""
 "EN - Resultaten moeten matchen met alle geselecteerde termen tegelijkertijd"
 
-#: plugin-options/filter-options.php:165
+#: plugin-options/filter-options.php:155
 #, fuzzy
 msgctxt ""
 "[Admin] Filter edit form; logical operator that affects query behaviour"
@@ -957,46 +957,46 @@ msgid "OR - Results need to match at least one of the selected terms"
 msgstr ""
 "OF - Resultaten moeten matchen met minstens een van de geselecteerde termen"
 
-#: plugin-options/filter-preset-options.php:41
+#: plugin-options/filter-preset-options.php:40
 msgctxt "[Admin] Filter Presets tab"
 msgid "Filter Presets"
 msgstr "Filter pre-sets"
 
-#: plugin-options/filter-preset-options.php:47
+#: plugin-options/filter-preset-options.php:45
 msgctxt "[Admin] Filter Presets table title"
 msgid "Filter Presets"
 msgstr "Filter pre-sets"
 
-#: plugin-options/filter-preset-options.php:53
+#: plugin-options/filter-preset-options.php:51
 msgctxt "[Admin] Add Preset button"
 msgid "Add preset"
 msgstr "Pre-set toevoegen"
 
-#: plugin-options/general-options.php:25
+#: plugin-options/general-options.php:24
 #, fuzzy
 msgctxt "[ADMIN] General settings page"
 msgid "General options"
 msgstr "Algemene opties"
 
-#: plugin-options/general-options.php:32
+#: plugin-options/general-options.php:30
 msgctxt "[ADMIN] General settings page"
 msgid "Lazy filters loading"
 msgstr ""
 
-#: plugin-options/general-options.php:33
+#: plugin-options/general-options.php:31
 msgctxt "[ADMIN] General settings page"
 msgid ""
 "Choose whether to use lazy loading for the filters in the preset to speed up "
 "the initial page loading"
 msgstr ""
 
-#: plugin-options/general-options.php:41
+#: plugin-options/general-options.php:38
 msgctxt "[ADMIN] General settings page"
 msgid "Paginate terms"
 msgstr ""
 
 #. translators: 1. Number of terms shown of first loading.
-#: plugin-options/general-options.php:44
+#: plugin-options/general-options.php:41
 msgctxt "[ADMIN] General settings page"
 msgid ""
 "When enabled, taxonomy filters won't show more than %d terms. If there are "
@@ -1004,18 +1004,18 @@ msgid ""
 "remaining terms"
 msgstr ""
 
-#: plugin-options/general-options.php:59
+#: plugin-options/general-options.php:54
 #, fuzzy
 msgctxt "[ADMIN] General settings page"
 msgid "Reset button"
 msgstr "Reset-knop tonen"
 
-#: plugin-options/general-options.php:66
+#: plugin-options/general-options.php:60
 msgctxt "[ADMIN] General settings page"
 msgid "Show reset button"
 msgstr "Reset-knop tonen"
 
-#: plugin-options/general-options.php:67
+#: plugin-options/general-options.php:61
 msgctxt "[ADMIN] General settings page"
 msgid ""
 "Enable to show the \"Reset filter\" button to allow the user to cancel the "
@@ -1024,27 +1024,27 @@ msgstr ""
 "Inschakelen om de \"Reset filter\" knop te tonen en toe te staan dat de "
 "gebruiker de filter selectie kan annuleren in een enkele klik"
 
-#: plugin-options/general-options.php:75
+#: plugin-options/general-options.php:68
 msgctxt "[ADMIN] General settings page"
 msgid "Reset button position"
 msgstr "Reset-knop positie"
 
-#: plugin-options/general-options.php:76
+#: plugin-options/general-options.php:69
 msgctxt "[ADMIN] General settings page"
 msgid "Choose the default position for reset button"
 msgstr "Kies de standaardpositie voor de reset knop"
 
-#: plugin-options/general-options.php:82
+#: plugin-options/general-options.php:75
 msgctxt "[ADMIN] General settings page"
 msgid "Before filters"
 msgstr "Voor filters"
 
-#: plugin-options/general-options.php:83
+#: plugin-options/general-options.php:76
 msgctxt "[ADMIN] General settings page"
 msgid "After filters"
 msgstr "Na filters"
 
-#: plugin-options/general-options.php:84
+#: plugin-options/general-options.php:77
 msgctxt "[ADMIN] General settings page"
 msgid ""
 "Above products list<small>When using WooCommerce's Gutenberg product blocks, "
@@ -1058,27 +1058,27 @@ msgstr ""
 "<code>[yith_wcan_reset_button]</code> shortcode of het <code>YITH Filters "
 "Reset knop</code> block</small>"
 
-#: plugin-options/legacy-options.php:16
+#: plugin-options/legacy-options.php:15
 msgctxt "[ADMIN] Legacy settings page"
 msgid "Frontend options"
 msgstr "Frontend opties"
 
-#: plugin-options/legacy-options.php:23
+#: plugin-options/legacy-options.php:21
 msgctxt "[ADMIN] Legacy settings page"
 msgid "Product container"
 msgstr "Product container"
 
-#: plugin-options/legacy-options.php:24
+#: plugin-options/legacy-options.php:22
 msgctxt "[ADMIN] Legacy settings page"
 msgid "Enter here the CSS selector (class or ID) of the product container"
 msgstr "Voer hier de CSS selector in (klasse of ID) voor de product container"
 
-#: plugin-options/legacy-options.php:32
+#: plugin-options/legacy-options.php:29
 msgctxt "[ADMIN] Legacy settings page"
 msgid "Shop pagination container"
 msgstr "Winkel paginering containcer"
 
-#: plugin-options/legacy-options.php:33
+#: plugin-options/legacy-options.php:30
 msgctxt "[ADMIN] Legacy settings page"
 msgid ""
 "Enter here the CSS selector (class or ID) of the shop pagination container"
@@ -1086,12 +1086,12 @@ msgstr ""
 "Hier de CSS selector (klasse of ID) invoeren van de winkel paginering "
 "container"
 
-#: plugin-options/legacy-options.php:41
+#: plugin-options/legacy-options.php:37
 msgctxt "[ADMIN] Legacy settings page"
 msgid "Result count container"
 msgstr "Resultaten teller container"
 
-#: plugin-options/legacy-options.php:42
+#: plugin-options/legacy-options.php:38
 msgctxt "[ADMIN] Legacy settings page"
 msgid ""
 "Enter here the CSS selector (class or ID) of the results count container"
@@ -1099,12 +1099,12 @@ msgstr ""
 "Hier de CSS selector (klasse of ID) invoeren van de resultaten teller "
 "container"
 
-#: plugin-options/legacy-options.php:50
+#: plugin-options/legacy-options.php:45
 msgctxt "[ADMIN] Legacy settings page"
 msgid "\"Scroll to top\" anchor selector"
 msgstr "\"Naar boven scrollen\" anker selector"
 
-#: plugin-options/legacy-options.php:51
+#: plugin-options/legacy-options.php:46
 msgctxt "[ADMIN] Legacy settings page"
 msgid ""
 "Enter here the CSS selector (class or ID) of the \"Scroll to to top\" anchor"
@@ -1112,27 +1112,27 @@ msgstr ""
 "Hier de CSS selector (klasse of ID) invoeren van het \"Naar boven scrollen\" "
 "anker"
 
-#: plugin-options/legacy-options.php:59
+#: plugin-options/legacy-options.php:53
 msgctxt "[ADMIN] Legacy settings page"
 msgid "Terms sorting"
 msgstr "Termen sorteren"
 
-#: plugin-options/legacy-options.php:60
+#: plugin-options/legacy-options.php:54
 msgctxt "[ADMIN] Legacy settings page"
 msgid "Choose how to sort terms inside filters"
 msgstr "Kies hoe je termen wilt sorteren binnen filters"
 
-#: plugin-options/legacy-options.php:66
+#: plugin-options/legacy-options.php:60
 msgctxt "[ADMIN] Legacy settings page"
 msgid "Product count"
 msgstr "Product tellen"
 
-#: plugin-options/legacy-options.php:67
+#: plugin-options/legacy-options.php:61
 msgctxt "[ADMIN] Legacy settings page"
 msgid "Alphabetical"
 msgstr "Alfabetisch"
 
-#: plugin-options/legacy-options.php:68
+#: plugin-options/legacy-options.php:62
 msgctxt "[ADMIN] Legacy settings page"
 msgid "Default"
 msgstr "Standaard"
@@ -1143,12 +1143,12 @@ msgctxt "[ADMIN] Seo settings page"
 msgid "SEO settings"
 msgstr "Algemene instellingen"
 
-#: plugin-options/seo-options.php:32
+#: plugin-options/seo-options.php:31
 msgctxt "[ADMIN] Seo settings page"
 msgid "Enable SEO option"
 msgstr "SEO optie inschakelen"
 
-#: plugin-options/seo-options.php:33
+#: plugin-options/seo-options.php:32
 msgctxt "[ADMIN] Seo settings page"
 msgid ""
 "Add \"robots\" meta tag in head tag of HTML page if filters have been "
@@ -1157,27 +1157,27 @@ msgstr ""
 "\"Robots\" meta tag toevoegen in hoofdtag van HTML pagina als filters zijn "
 "gedeactiveerd."
 
-#: plugin-options/seo-options.php:40
+#: plugin-options/seo-options.php:38
 msgctxt "[ADMIN] Seo settings page"
 msgid "Meta tag"
 msgstr "Meta tag"
 
-#: plugin-options/seo-options.php:41
+#: plugin-options/seo-options.php:39
 msgctxt "[ADMIN] Seo settings page"
 msgid "Select which tag to use on filtered pages"
 msgstr "Selecteer welke tag wordt gebruikt op gefilterde pagina's"
 
-#: plugin-options/seo-options.php:47
+#: plugin-options/seo-options.php:45
 msgctxt "[ADMIN] Seo settings page"
 msgid "Disabled"
 msgstr "Uitgeschakeld"
 
-#: plugin-options/seo-options.php:60
+#: plugin-options/seo-options.php:57
 msgctxt "[ADMIN] Seo settings page"
 msgid "Add \"nofollow\" to filter anchors"
 msgstr "\"Nietvolgen\" toevoegen aan filter ankers"
 
-#: plugin-options/seo-options.php:61
+#: plugin-options/seo-options.php:58
 #, fuzzy
 msgctxt "[ADMIN] Seo settings page"
 msgid ""
@@ -1187,22 +1187,22 @@ msgstr ""
 "Wanneer dit is ingeschakeld, wordt een re=\"nofollow\" eigenschap toegevoegd "
 "aan alle filter ankers over de gehele plugin"
 
-#: plugin-options/seo-options.php:73
+#: plugin-options/seo-options.php:70
 msgctxt "[ADMIN] Seo settings page"
 msgid "URL permalinks"
 msgstr "URL permalinks"
 
-#: plugin-options/seo-options.php:74
+#: plugin-options/seo-options.php:71
 msgctxt "[ADMIN] Seo settings page"
 msgid "Choose how to manage browser URL during filtering"
 msgstr "Bepaal hoe je de browser-URL wilt beheren tijdens het filteren"
 
-#: plugin-options/seo-options.php:80
+#: plugin-options/seo-options.php:77
 msgctxt "[ADMIN] Seo settings page"
 msgid "Add filters parameters to default URL"
 msgstr "Filter parameters aan standaard URL toevoegen"
 
-#: plugin-options/seo-options.php:81
+#: plugin-options/seo-options.php:78
 msgctxt "[ADMIN] Seo settings page"
 msgid "Don't change URL"
 msgstr "URN niet wijzigen"

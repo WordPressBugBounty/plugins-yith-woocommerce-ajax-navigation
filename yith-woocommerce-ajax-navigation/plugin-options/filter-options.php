@@ -72,7 +72,6 @@ return apply_filters(
 				'desc'              => _x( 'Select which taxonomy to use for this filter', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 				'custom_attributes' => 'data-taxonomies="' . wc_esc_json( wp_json_encode( $taxonomy_details ) ) . '"',
 			),
-
 			'use_all_terms'   => array(
 				'label' => _x( 'Auto-populate with all terms', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 				'type'  => 'onoff',
@@ -83,7 +82,6 @@ return apply_filters(
 					'yith-woocommerce-ajax-navigation'
 				),
 			),
-
 			'term_ids'        => array(
 				'label'    => _x( 'Choose terms', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 				'type'     => 'select-buttons',
@@ -92,7 +90,6 @@ return apply_filters(
 				'options'  => array(),
 				'desc'     => _x( 'Select which terms to use for filtering', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 			),
-
 			'filter_design'   => array(
 				'label'   => _x( 'Filter type', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 				'type'    => 'select',
@@ -100,7 +97,6 @@ return apply_filters(
 				'options' => YITH_WCAN_Filters_Factory::get_supported_designs(),
 				'desc'    => _x( 'Select the filter type for this filter', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 			),
-
 			'label_position'  => array(
 				'label'   => _x( 'Labels', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 				'type'    => 'radio',
@@ -111,7 +107,6 @@ return apply_filters(
 				),
 				'desc'    => _x( 'Choose if and where to show the label inside your filter', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 			),
-
 			'column_number'   => array(
 				'label' => _x( 'Columns number', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 				'type'  => 'number',
@@ -120,7 +115,6 @@ return apply_filters(
 				'max'   => 8,
 				'desc'  => _x( 'Set the number of items per row you want to show for this design', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 			),
-
 			'customize_terms' => array(
 				'label' => _x( 'Customize terms', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 				'class' => 'customize-terms',
@@ -133,13 +127,11 @@ return apply_filters(
 					'yith-woocommerce-ajax-navigation'
 				),
 			),
-
 			'terms_options'   => array(
 				'label'  => _x( 'Terms options', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 				'type'   => 'custom',
 				'action' => 'yith_wcan_terms_options',
 			),
-
 			'hierarchical'    => array(
 				'label'   => _x( 'Show hierarchy', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 				'type'    => 'radio',
@@ -150,13 +142,11 @@ return apply_filters(
 				),
 				'desc'    => _x( 'Choose how to show terms hierarchy', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 			),
-
 			'multiple'        => array(
 				'label' => _x( 'Allow multiple selection', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 				'type'  => 'onoff',
 				'desc'  => _x( 'Enable if the user can select multiple terms when filtering products', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 			),
-
 			'relation'        => array(
 				'label'   => _x( 'Multiselect relation', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 				'type'    => 'radio',
@@ -166,7 +156,6 @@ return apply_filters(
 				),
 				'desc'    => _x( 'Choose how multiple terms selection should behave', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 			),
-
 		)
 	)
 );

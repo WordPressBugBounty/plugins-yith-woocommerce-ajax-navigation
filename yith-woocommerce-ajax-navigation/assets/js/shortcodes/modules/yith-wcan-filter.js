@@ -46,7 +46,7 @@ export default class YITH_WCAN_Filter {
 	// execute call to filter products in current view
 	doFilter( filters, target, preset ) {
 		let targetUrl,
-			$target = target ? $( target ) : $( 'body' ),
+			$target = target ? $( document ).find( target ) : $( 'body' ),
 			customFilters;
 
 		// filter properties
@@ -253,7 +253,7 @@ export default class YITH_WCAN_Filter {
 
 		if ( target ) {
 			let $preset = $( preset ),
-				$target = $( target ),
+				$target = $( document ).find( target ),
 				$destination;
 
 			if ( $preset.length ) {

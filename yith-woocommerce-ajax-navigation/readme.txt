@@ -4,7 +4,7 @@ Contributors: yithemes
 Tags: shop filter, Ajax product filter, product filter, woocommerce product filter, woocommerce filter
 Requires at least: 6.9
 Tested up to: 7.1
-Stable tag: 5.25.0
+Stable tag: 5.25.1
 Requires PHP: 8.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -157,6 +157,10 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 14. Gutenberg block
 
 == Changelog ==
+
+= 5.25.1 - Released on 16 November 2026 =
+
+* Fix: prevent potential XSS through shortcode attributes
 
 = 5.25.0 - Released on 4 November 2026 =
 

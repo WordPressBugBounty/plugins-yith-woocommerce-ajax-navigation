@@ -50,7 +50,7 @@ export default class YITH_WCAN_Preset {
 
 		// target of the filter, if any
 		this.target = this.$preset.data( 'target' );
-		this.$target = this.target ? $( this.target ) : false;
+		this.$target = this.target ? $( document ).find( this.target ) : false;
 
 		this._regiterStatus();
 		this._initFilterButton();

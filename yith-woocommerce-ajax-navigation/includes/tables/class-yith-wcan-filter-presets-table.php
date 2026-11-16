@@ -18,6 +18,7 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Presets_Table' ) ) {
 	 * @since 1.0.0
 	 */
 	class YITH_WCAN_Filter_Presets_Table extends WP_List_Table {
+
 		/**
 		 * Class constructor method
 		 *
@@ -42,7 +43,6 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Presets_Table' ) ) {
 		 * @since 1.0.0
 		 */
 		protected function get_table_classes() {
-
 			return array(
 				'widefat',
 				'fixed',
@@ -80,7 +80,7 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Presets_Table' ) ) {
 			if ( ! $item->current_user_can( 'edit' ) ) {
 				echo esc_html( $item->get_title() );
 			} else {
-				echo sprintf( '<a href="%s">%s</a>', esc_url( $item->get_admin_edit_url() ), esc_html( $item->get_title() ) );
+				printf( '<a href="%s">%s</a>', esc_url( $item->get_admin_edit_url() ), esc_html( $item->get_title() ) );
 			}
 		}
 
@@ -90,8 +90,11 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Presets_Table' ) ) {
 		 * @param YITH_WCAN_Preset $item Current item.
 		 */
 		public function column_shortcode( $item ) {
+			?>
+			<label for="copy_to_clipboard_<?php echo esc_attr( $item->get_id() ); ?>" class="screen-reader-text"><?php echo esc_html( $item->get_title() ); ?></label>
+			<?php
 			$shortcode = sprintf( '[yith_wcan_filters slug=&quot;%s&quot;]', esc_attr( $item->get_slug() ) );
-			yith_plugin_fw_copy_to_clipboard( $shortcode );
+			yith_plugin_fw_copy_to_clipboard( $shortcode, array( 'id' => "copy_to_clipboard_{$item->get_id()}" ) );
 		}
 
 		/**
@@ -199,9 +202,9 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Presets_Table' ) ) {
 					'icon'   => 'trash',
 					'url'    => esc_url( $item->get_admin_delete_url() ),
 					'data'   => array(
-						'title'    => esc_attr_x( 'Delete this preset', '[Admin] Preset delete action label', 'yith-woocommerce-ajax-navigation' ),
-						'message'  => nl2br( __( "This item will be removed from the list.\nDo you wish to continue?", 'yith-woocommerce-waiting-list' ) ),
-						'action'   => 'delete',
+						'title'   => esc_html_x( 'Delete this preset', '[Admin] Preset delete action label', 'yith-woocommerce-ajax-navigation' ),
+						'message' => nl2br( __( "This item will be removed from the list.\nDo you wish to continue?", 'yith-woocommerce-waiting-list' ) ),
+						'action'  => 'delete',
 
 					),
 				)
@@ -214,12 +217,11 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Presets_Table' ) ) {
 		 * @param YITH_WCAN_Preset $item Current item.
 		 */
 		public function action_change_status( $item ) {
-
 			yith_plugin_fw_get_field(
 				array(
-					'id'    => 'preset-status',
-					'value' => $item->is_enabled() ? 'yes' : 'no',
-					'type'  => 'onoff',
+					'id'                => 'preset-status',
+					'value'             => $item->is_enabled() ? 'yes' : 'no',
+					'type'              => 'onoff',
 					'custom_attributes' => 'data-preset="' . esc_attr( $item->get_id() ) . '"',
 
 				),
@@ -244,7 +246,9 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Presets_Table' ) ) {
 				 * @param YITH_WCAN_Filter_Presets_Table $table Current table object.
 				 */
 				do_action( 'yith_wcan_before_presets_table', $this );
+
 				parent::display();
+
 				/**
 				 * DO_ACTION: yith_wcan_after_presets_table
 				 *

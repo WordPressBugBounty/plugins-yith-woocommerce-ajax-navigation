@@ -152,7 +152,7 @@ var YITH_WCAN_Filter = /*#__PURE__*/function () {
     value: function doFilter(filters, target, preset) {
       var _this = this;
       var targetUrl,
-        $target = target ? $(target) : $('body'),
+        $target = target ? $(document).find(target) : $('body'),
         customFilters;
 
       // filter properties
@@ -301,7 +301,7 @@ var YITH_WCAN_Filter = /*#__PURE__*/function () {
       responseDom.innerHTML = response;
       if (target) {
         var $preset = $(preset),
-          $target = $(target),
+          $target = $(document).find(target),
           $destination;
         if ($preset.length) {
           $destination = $response.find(preset);
@@ -1172,7 +1172,7 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
 
     // target of the filter, if any
     this.target = this.$preset.data('target');
-    this.$target = this.target ? $(this.target) : false;
+    this.$target = this.target ? $(document).find(this.target) : false;
     this._regiterStatus();
     this._initFilterButton();
     this._initFilters();

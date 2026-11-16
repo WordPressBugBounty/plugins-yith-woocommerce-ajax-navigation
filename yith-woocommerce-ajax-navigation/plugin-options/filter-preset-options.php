@@ -35,13 +35,11 @@ return apply_filters(
 				'desc' => '',
 				'id'   => 'yith_wcan_filter_preset_settings',
 			),
-
 			'presets'                     => array_merge(
 				array(
 					'name'                 => _x( 'Filter Presets', '[Admin] Filter Presets tab', 'yith-woocommerce-ajax-navigation' ),
 					'type'                 => 'yith-field',
 					'yith-type'            => 'list-table',
-
 					'list_table_class'     => 'YITH_WCAN_Filter_Presets_Table',
 					'list_table_class_dir' => YITH_WCAN_INC . 'tables/class-yith-wcan-filter-presets-table.php',
 					'title'                => _x( 'Filter Presets', '[Admin] Filter Presets table title', 'yith-woocommerce-ajax-navigation' ),
@@ -53,7 +51,6 @@ return apply_filters(
 					'add_new_button' => _x( 'Add preset', '[Admin] Add Preset button', 'yith-woocommerce-ajax-navigation' ),
 				) : array()
 			),
-
 			'lists_section_end'           => array(
 				'type' => 'sectionend',
 				'id'   => 'yith_wcan_filter_preset_settings',
